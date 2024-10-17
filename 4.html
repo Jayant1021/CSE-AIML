@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>results:</h1>
+    <p id="result-add"></p>
+    <p id="result-sub"></p>
+    <p id="result-PI"></p>
+    <p id="result-mul"></p>
+    <script type="module">
+        import{add,sub,PI} from"./2.js";
+import *as jad from "./2.js";
+import mul from"./2.js";
+document.getElementById('result-add').innerText='add:${jad.add(5,3)}';
+document.getElementById('result-sub').innerText='add:${jad.sub(5,3)}';
+document.getElementById('result-PI').innerText='PI:${jad.PI}';
+document.getElementById('result-mul').innerText='mul:${jad.mul(5,3)}';
+
+
+    </script>
+</body>
+</html>
